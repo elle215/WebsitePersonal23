@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en">
+  <head> <!-- Head Starts Here-->
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">    <title> Save the Dolphins</title>
+    <title> Save the Dolphins</title>
+    <meta name="description" content="Organization dedicated to saving marine animals in danger">
+    <script src="https://kit.fontawesome.com/660324d111.js" crossorigin="anonymous"></script>
+    <style>
+      /*CSS*/
+      html{
+        height: 100%;
+  
+      }
+      .navbar
+      {
+        background-color: #edcfd1;
+      }
+     
+      .section-1
+      {
+        background-image:url(artback.jpg);
+        box-shadow: 4px 8px 10px 0 rgba(22, 22, 26, 0.18);
+        background-size: flex;
+        height: 500px;
+        margin-bottom: 300px;
+
+      }
+    
+      header {
+        background-color: #edcfd1;
+        width: 100%;
+        height: 118px;
+        text-align: center;
+        border-style: 10px;
+        border-color: black;
+        background-position: center;
+        background-attachment: scroll;
+     
+
+      }
+
+
+      h4
+      {
+        font-size: 80px;
+        color: white;
+        text-emphasis-color: black;
+        outline-color: black;
+        text-decoration-color: black;
+        text-decoration-thickness: 10px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        padding-top: 30px;
+      }
+
+      main{
+        background-color: rgba(0, 0, 139, 0.31);
+        height: 800px;
+        width: 100%;
+        text-align: center;
+        margin-left:auto;
+        margin-right:auto;
+        background-position: center;
+        background-attachment: scroll;
+      
+
+      
+      }
+      footer {
+        background-color: #71f0f962;
+        height: 100px;
+        width: 100%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-position: center;
+        background-attachment: scroll;
+      }
+
+      p
+      {
+        font-size: 20px;
+        color: white;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        text-indent: 5px;
+        text-shadow: darkslategrey;
+        margin: 5px;
+        padding-top: 50px;
+ 
+      }
+     
+
+      .Yearly-timeline {
+          font-family: 'Poppins', sans-serif;
+      }
+
+      .Yearly-timeline:after {
+          content: '';
+          display: block;
+          clear: both;
+      }
+
+      .Yearly-timeline .timeline {
+          width: calc(50% + 17px);
+          padding: 0 30px 30px 0;
+          float: left;
+          position: relative;
+      }
+
+      .Yearly-timeline .timeline:before { content: '';
+          height: 60px;
+          width: 2px;
+          border-left: 2px solid #fda5fe;
+          transform: rotate(-45deg);
+          position: absolute;
+          right: 30px;
+          bottom: 0;
+      }
+      .Yearly-timeline .timeline:after { content: '';
+          height: 60px;
+          width: 2px;
+          border-left: 2px solid #ffaefc;
+          transform: rotate(-45deg);
+          position: absolute;
+          right: 30px;
+          bottom: 0;
+      }
+         
+
+      .Yearly-timeline .timeline:after {
+          background-color: #fff;
+          height: 20px;
+          width: 20px;
+          border: 6px solid #ff70f8;
+          border-radius: 50%;
+          right: 0;
+      }
+
+      .Yearly-timeline .timeline-content {color: #555;
+          background: #f87de8;
+          text-align: center;
+          min-height: 170px;
+          padding: 30px 35px 35px;
+          border-radius: 15px 15px 0 15px;
+          display: block;
+          position: relative;
+          z-index: 1;
+      }
+
+      .Yearly-timeline .timeline-content:before {
+          content: '';
+          background-color: #fff;
+          position: absolute;
+          left: 17px;
+          right: 17px;
+          top: 17px;
+          bottom: 17px;
+          z-index: -1;
+      }
+
+      .Yearly-timeline .timeline-content:hover {
+          text-decoration: none;
+      }
+
+      .Yearly-timeline .timeline-icon {
+          color: #777;
+          font-size: 35px;
+      }
+
+      .Yearly-timeline .title {
+          font-size: 22px;
+          font-weight: 700;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          margin: 0 0 8px;
+      }
+
+      .Yearly-timeline .description {
+          color: #777;
+          font-size: 13px;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+          line-height: 18px;
+          margin: 0;
+      }
+      .Yearly-timeline .timeline:nth-child(even) {
+          padding: 0 0 30px 30px;
+          float: right;
+      }
+
+      .Yearly-timeline .timeline:nth-child(even):before {
+          transform: rotate(45deg);
+          right: auto;
+          left: 30px;
+      }
+
+      .Yearly-timeline .timeline:nth-child(even):after {
+          right: auto;
+          left: 0;
+      }
+
+      .Yearly-timeline .timeline:nth-child(even) .timeline-content {
+          border-radius: 15px 15px 15px 0;
+      }
+
+      .Yearly-timeline .timeline:nth-child(4n+2):before,
+      .Yearly-timeline .timeline:nth-child(4n+2):after {
+          border-color: #ff89b7;
+      }
+
+      .Yearly-timeline .timeline:nth-child(4n+2) .timeline-content {
+          background: #ff89b7;
+      }
+
+      .Yearly-timeline .timeline:nth-child(4n+3):before,
+      .Yearly-timeline .timeline:nth-child(4n+3):after {
+          border-color: #f9abf4;
+      }
+
+      .Yearly-timeline .timeline:nth-child(4n+3) .timeline-content {
+          background: #f9abf4;
+      }
+
+      .Yearly-timeline .timeline:nth-child(4n+4):before,
+      .Yearly-timeline .timeline:nth-child(4n+4):after {
+          border-color: #ffd5f7;
+      }
+
+      .Yearly-timeline .timeline:nth-child(4n+4) .timeline-content {
+          background: #ffd5f7;
+      }
+
+  @media screen and (max-width:767px) {
+    .Yearly-timeline .timeline {
+        width: 100%;
+        padding: 30px 0 0 30px;
+        margin: 0 0 20px;
+    }
+
+    .Yearly-timeline .timeline:before {
+      transform: rotate(-45deg);
+        bottom: auto;
+        top: 0;
+        right: auto;
+        left: 30px;
+    }
+
+    
+    .Yearly-timeline .timeline:nth-child(even):before {
+        transform: rotate(-45deg);
+        bottom: auto;
+        top: 0;
+        right: auto;
+        left: 30px;
+    }
+
+    .Yearly-timeline .timeline:after{  bottom: auto;
+        top: 0;
+        right: auto;
+        left: 0;}
+    .Yearly-timeline .timeline:nth-child(even):after {
+        bottom: auto;
+        top: 0;
+        right: auto;
+        left: 0;
+    }
+
+    .Yearly-timeline .timeline-content {
+      border-radius: 0 15px 15px 15px;
+    }
+    .Yearly-timeline .timeline:nth-child(even)
+     .timeline-content {
+        border-radius: 0 15px 15px 15px;
+    }}
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif
+}
+
+
+.meet {
+    font-size: 40px;
+    color: white;
+}
+
+
+
+.card {
+    height: 400px;
+    width: 300px;
+    border-radius: 20px;
+    color: white;
+    background: #d20fd5;
+    box-shadow: inset 20px 20px 60px #960e8f,
+        inset -20px -20px 60px #f000dc;
+    border: none;
+    padding-top: 300px;
+}
+
+.card img {
+    border-radius: 50%;
+    background: #003bd1;
+    box-shadow: 20px 20px 60px #b20077,
+        -20px -20px 60px #e551cc;
+}
+
+.view-button {
+    width: 200px;
+    height: 40px;
+    outline: 0 !important;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 4px;
+    background: linear-gradient(145deg, #ea81ed, #dc00e0);
+    box-shadow: 20px 20px 60px #d00288,
+        -20px -20px 60px #e121a5;
+}
+
+.view-button:active {
+    border-radius: 4px;
+    background: linear-gradient(145deg, #9900e0, #8100bc);
+    box-shadow: 20px 20px 60px #7a00b2,
+        -20px -20px 60px #a400f0;
+}
+table
+{
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 100px;
+
+}
+.title
+{
+  color: #5b004e;
+  font-family: sans-serif;
+  font-size: xx-large;
+}
+
+
+
+
+
+
+
+.home-newsletter {
+    padding: 150px 0;
+}
+
+.home-newsletter .single {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.home-newsletter .single h2 {
+    font-size: 22px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.home-newsletter .single .form-control {
+    height: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-color: transparent;
+    border-radius: 20px 0 0 20px;
+}
+
+.home-newsletter .single .form-control:focus {
+    box-shadow: none;
+    border-color: #243c4f;
+}
+
+.home-newsletter .single .btn {
+    min-height: 50px;
+    border-radius: 0 20px 20px 0;
+    background: #243c4f;
+    color: #fff;
+}
+.patrons{
+    margin-left: 49.5%;
+    margin-right: 49.5%;
+    margin-bottom: 50px;
+}
+p2{
+  
+    color:rgba(0, 0, 139, 0.31);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+ 
+
+}
+footer {
+        background-color: #31d3f051;
+        height: 200px;
+        width: 100%;
+        padding-bottom: 100px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: larger;
+        font-weight: bold;
+
+      }
+.numberrr {
+
+text-align: center;
+padding-bottom: 50px;
+}
+.email{
+
+text-align: center;
+}
+.socialmedia {
+
+text-align: center;
+}
+.footerone
+{
+display: flex;
+justify-content: space-around;
+text-align: center;
+
+}
+.top-padding{
+padding-top: 50px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.onwednesdayswewearpink
+{
+    background-color: pink;
+    width:100%;
+  
+}
+.pinker
+{
+    padding-top: 100px;
+    font-family: sans-serif;
+    font-size: larger;
+    color:#960e8f;
+}
+
+    
+    
+        
+
+ 
+      
+    </style>
+  </head> <!-- Head Ends Here-->
+  <!-- Body Starts Here-->
+  <body>
+    <!-- Start Navbar-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="DOLPHIN LOGO.png" alt="Logo for website" width="50" height="50" ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+           
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar-->
+ 
+
+
+    <header>
+      <img src="DOLPHIN LOGO.png" alt="Logo for website" width="140" height="118" >
+
+    </header>
+
+    <section class="section-1">
+
+      <h4>Who are we?</h4>
+      <p>
+          We are many organizations that came together for our one mission!
+      </p>
+    </section>
+
+   
+  </main>
+        <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="Yearly-timeline">
+                      <div class="timeline">
+                          <a href="" class="timeline-content">
+                              <div class="timeline-icon"><i class="fa fa-instagram"></i></div>
+                              <h3 class="titlelol">2018-2022</h3>
+                              <p class="description">
+                                  We finally sold over 300 copies of painting, more than 10,000 subscriptions to different organizations, and 2M followers on Instagram
+                              </p>
+                          </a>
+                      </div>
+                      <div class="timeline">
+                          <a href="" class="timeline-content">
+                              <div class="timeline-icon"><i class="fa fa-twitter"></i></div>
+                              <h3 class="titlelol">2013-2017</h3>
+                              <p class="description">
+                                  Our journey is finally taking off. Items are selling off the shelf. Never had we expected such an excellent reaction from people throughout the world!
+                              </p>
+                          </a>
+                      </div>
+                      <div class="timeline">
+                        <a href="" class="timeline-content">
+                            <div class="timeline-icon"><i class="fa fa-facebook"></i></div>
+                            <h3 class="titlelol">2009-2012</h3>
+                            <p class="description">
+                               Coding the website was not easy, and it was hard to get everyone on board. But we did it!
+                            </p>
+                        </a>
+                    </div>
+                    <div class="timeline">
+                        <a href="" class="timeline-content">
+                            <div class="timeline-icon"><i class="fa fa-linkedin"></i></div>
+                            <h3 class="titlelol">2006-2009</h3>
+                            <p class="description">
+                                Our ideas combine. We make it happen.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+  <div class="container d-flex justify-content-center">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="card p-3 py-4 mt-5 mb-5">
+                  <div class="text-center"> <img src="mypfp.png" width="100" class="rounded-circle">
+                      <h3 class="mt-2">Bella Rahn</h3> <span class="mt-1 clearfix">Website Developer</span> <small class="mt-4">I created this website because im cool</small>
+                      <div class="button mt-5">
+                          <button class="view-button"> View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="card p-3 py-4 mt-5 mb-5">
+                  <div class="text-center"> <img src="https://images.pexels.com/photos/2772091/pexels-photo-2772091.jpeg" width="100" class="rounded-circle">
+                      <h3 class="mt-2">Laura Ipsum</h3> <span class="mt-1 clearfix">Operations Manager</span> <small class="mt-4">I am in charge of running all the volunteer organizations and making sure everything ends up happening</small>
+                      <div class="button mt-5">
+                          <button class="view-button"> View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-4">
+              <div class="card p-3 py-4 mt-5 mb-5">
+                  <div class="text-center"> <img src="https://images.pexels.com/photos/2065198/pexels-photo-2065198.jpeg" width="100" class="rounded-circle">
+                      <h3 class="mt-2">Donna Sita</h3> <span class="mt-1 clearfix">Treasurer</span> <small class="mt-4">I am in charge of handling finances and sending to the correct organizations</small>
+                      <div class="button mt-5">
+                          <button class="view-button"> View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    </section>
+
+    <section class="patrons">
+        <p2> OUR PATRONS </p2>
+    </section>
+
+
+  <section class="pinker">
+  <table class="onwednesdayswewearpink">
+    <tr class="pinker">
+      <th class="title">Save The Dolphins</th>
+      <th><img src="anothersaave.jpeg" width="250" height="300"></th>
+      <th><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86033.47033540974!2d-82.88772529160622!3d27.97690536377278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2f12b65ed9a89%3A0x87f5727ae1aed713!2sClearwater%20Marine%20Aquarium!5e1!3m2!1sen!2sus!4v1666615118524!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></th>
+    </tr>
+    <tr class="pinker">
+      <td class="title">Ocean Conservancy</td>
+      <td><img src="oc.png"  width="300" height="300"></td>
+      <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25437641.067582!2d-110.79398809999999!3d38.839028764342224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7c7f45e3743%3A0xe2dd96f05ead1a3!2sOcean%20Conservancy!5e0!3m2!1sen!2sus!4v1667014636200!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+    </tr>
+    <tr class="pinker">
+      <td class="title">Reef Check</td>
+      <td><img src="rc.jpeg"  width="300" height="300"></td>
+      <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.7547271906874!2d-118.44846608478707!3d33.9731431806275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a3ed920d3cbb%3A0x37165e7b6c4d048e!2sReef%20Check%20Foundation!5e0!3m2!1sen!2sus!4v1667014832900!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+    </tr>
+    <tr class="pinker">
+      <td class="title">Coral Reef Alliance</td>
+      <td><img src="cra.png"  width="300" height="300"></td>
+      <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84507.13623337582!2d-122.35881304657865!3d37.79825248812629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858061e41f1967%3A0x99319b7d0b0209ad!2sCoral%20Reef%20Alliance!5e0!3m2!1sen!2sus!4v1667015029240!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+    </tr>
+    <tr class="pinker">
+      <td class="title">Charleston Turtle Hospital</td>
+      <td><img src="STCC Logo Stacked-01.png.crdownload"  width="300" height="300"></td>
+      <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.0477337340776!2d-79.92768788481763!3d32.790993580967736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88fe7a715b63ffa1%3A0x1cec10382748563a!2sSouth%20Carolina%20Aquarium!5e0!3m2!1sen!2sus!4v1667015136911!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+    </tr>
+  </table>
+</section> 
+<section class="home-newsletter">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-12">
+              <div class="single">
+                  <h2>Subscribe to our Newsletter</h2>
+                  <div class="input-group">
+                      <input type="email" class="form-control" placeholder="Enter your email">
+                      <span class="input-group-btn">
+                          <button class="btn btn-theme" type="submit">Subscribe</button>
+                      </span>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+  
+        <footer class="footerone">
+            <section class="numberrr text-center">
+              Reach Out to Us
+              <section class="top-padding">
+              call (123)-456-789
+              </section>
+              <section class="top-padding">
+              SavetheDolphinsorg@email.com
+              </section>
+            </section>
+      
+            <section class="email text-center">
+              Social Media Interactive with Us:
+              <section class="top-padding">
+              <i class="fa-brands fa-tiktok"></i><p3>TikTok: SavingTheDolphins Information</p3>
+              </section>
+              <section class="top-padding">
+              <i class="fa-brands fa-discord"></i><p3> Discord link: https://discord.gg/D01Ph1n</p3>
+              </section>
+            </section>
+      
+            <section class="socialmedia text-center">
+              social media:
+              <section class="top-padding">
+              <i class="fa-brands fa-facebook"></i><p3>Facebook: SaveTheDolphinsOrg</p3>
+              </section>
+              <section class="top-padding">
+              <i class="fa-brands fa-square-instagram"></i><p3> Instagram: @SavingTheMarineAnimals</p3>
+              </section>
+            </section>
+            
+          </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+ </body> <!-- Body Ends Here-->
+
+ 
+</html>
